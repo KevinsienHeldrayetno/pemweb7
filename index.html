@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tugas Pemweb 7 120140012</h1>
+    <h2>Tambah Mahasiswa</h2>
+    <form action="tambahdata.php" method="post">
+        <label for="nim">NIM:</label>
+        <input type="number" name="nim" required><br>
+        <label for="nama">Nama:</label>
+        <input type="text" name="nama" required><br>
+        <label for="prodi">Prodi:</label>
+        <input type="text" name="prodi" required><br>
+        <input type="submit" value="Tambahkan"><br>
+    </form>
+    <h2>Hapus Mahasiswa</h2>
+    <form action="hapusdata.php" method="get">
+        <label for="del">NIM:</label>
+        <input type="text" name="del" required>
+        <input type="submit" value="Hapus">
+    </form>
+    <h2>Update Data Mahasiswa</h2>
+    <form action="updateData.php" method="post">
+        <label for="nimUpdate">NIM:</label>
+        <input type="text" name="nimUpdate" required><br>
+        <label for="namaUpdate">Nama:</label>
+        <input type="text" name="namaUpdate" required><br>
+        <label for="prodiUpdate">Prodi:</label>
+        <input type="text" name="prodiUpdate" required><br>
+        <input type="submit" value="Update"><br>
+    </form>
+    <h2>Search Mahasiswa sesuai Prodi</h2>
+    <form action="search.php" method="get">
+        <label for="prodiSearch">Program Studi:</label>
+        <select id="prodiSearch" name="prodiSearch">
+          <option value="Informatika">Teknik Informatika</option>
+          <option value="Elektro">Teknik Elektro</option>
+          <option value="Telekomunikasi">Teknik Telekomunikasi</option>
+          <option value="Tambang">Teknik Tambang</option>
+          <option value="Sipil">Teknik Sipil</option>
+        </select>
+        <input type="submit" value="Search">
+      </form>
+</body>
+</html>
